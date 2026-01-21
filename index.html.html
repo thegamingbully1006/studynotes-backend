@@ -1,0 +1,51 @@
+const index_html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyNotes</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<header>
+<h1>StudyNotes</h1>
+<p>High-quality subject notes</p>
+</header>
+<nav>
+<a href="#subjects">Subjects</a>
+<a href="#signup">Sign Up</a>
+<a href="#login">Login</a>
+</nav>
+<section id="subjects">
+<h2>Available Subjects</h2>
+<div class="cards">
+<div class="card"><h3>Mathematics</h3><div class="price">₹20</div><button onclick="buy('Mathematics')">Buy Notes</button></div>
+<div class="card"><h3>Science</h3><div class="price">₹20</div><button onclick="buy('Science')">Buy Notes</button></div>
+<div class="card"><h3>Social Science</h3><div class="price">₹20</div><button onclick="buy('SocialScience')">Buy Notes</button></div>
+<div class="card"><h3>English</h3><div class="price">₹20</div><button onclick="buy('English')">Buy Notes</button></div>
+<div class="card"><h3>Hindi</h3><div class="price">₹20</div><button onclick="buy('Hindi')">Buy Notes</button></div>
+</div>
+</section>
+<section id="signup" class="auth">
+<h2>Sign Up</h2>
+<input type="email" id="signupEmail" placeholder="Email" required>
+<input type="password" id="signupPassword" placeholder="Password" required>
+<button onclick="signup()">Create Account</button>
+<p id="signupMsg"></p>
+</section>
+<section id="login" class="auth">
+<h2>Login</h2>
+<input type="email" id="loginEmail" placeholder="Email" required>
+<input type="password" id="loginPassword" placeholder="Password" required>
+<button onclick="login()">Login</button>
+<p id="loginMsg"></p>
+</section>
+<footer>
+<p>© 2026 StudyNotes. Educational use only.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+`;
